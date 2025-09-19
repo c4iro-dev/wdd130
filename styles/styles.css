@@ -1,3 +1,11 @@
+:root {
+    --solid-black-border: 1px solid black;
+    --height: auto;
+    --width-600: 600px;
+    --text-align: center;
+
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -14,13 +22,13 @@ h1 {
 }
 
 main {
-    max-width: 600px;
+    max-width: var(--width-600);
 }
 
 main img {
     width: 150px;
-    height: auto;
-    border: 1px solid black;
+    height: var(--height);
+    border: var(--solid-black-border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -30,10 +38,10 @@ p {
 }
 
 aside {
-    width: 600px;
+    width: var(--width-600);
     margin: 0 auto;
-    text-align: center;
-    border: 1px solid black;
+    text-align: var(--text-align);
+    border: var(--solid-black-border);
     padding: 5px;
     background-color: #131;
     color: white;
@@ -41,11 +49,11 @@ aside {
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--height);
 }
 
 footer {
     margin-top: 25px;
-    border-top: 1px solid black;
-    text-align: center;
+    border-top: var(--solid-black-border);
+    text-align: var(--text-align);
 }
