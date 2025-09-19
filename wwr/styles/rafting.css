@@ -18,7 +18,7 @@
 body {
     font-family: var(--body-font);
     color: var(--neutral-dark);
-    background-color: var(--primary-background);
+    background-color: var(--neutral-light);
 }
 
 header, main, footer {
