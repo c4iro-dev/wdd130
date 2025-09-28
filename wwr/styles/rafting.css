@@ -85,7 +85,7 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.9;
-    background-color: var(--accent-color);
+    background-color: var(--neutral-dark);
     color: #fff;
 }
 
