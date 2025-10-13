@@ -183,6 +183,10 @@ footer p {
     margin: 0 auto;
 }
 
+.hidden {
+    display: none;
+}
+
 address {
     text-align: center;   
     font-style: normal;
@@ -286,6 +290,11 @@ form button {
     text-align: center;
     border: 1px solid var(--neutral-dark);
     padding: 20px;
+}
+
+.staff img {
+    width: 120px;
+    height: auto;
 }
 
 .staff .figures {
