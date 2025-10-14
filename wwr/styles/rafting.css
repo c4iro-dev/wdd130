@@ -30,6 +30,7 @@ header img {
     width: 100px;
     display: flex;
     align-items: center;
+    border: 2px solid var(--neutral-dark)
 }
 
 header {
@@ -85,8 +86,21 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: 0.9;
-    background-color: var(--neutral-dark);
+    background-color: var(--primary-color);
     color: #fff;
+}
+
+.hero2 {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    font-size: 3.4rem;
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+
 }
 
 .history {
@@ -302,4 +316,102 @@ form button {
     justify-content: space-around;
     margin: 0 30px;
     padding-top: 10px;
+}
+
+.fade-image {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* ensures the overlay doesn’t spill out */
+}
+.fade-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%; 
+  background: linear-gradient(to bottom, transparent 0%, var(--neutral-light, #fff) 70%, var(--neutral-light, #fff) 100%);
+}
+
+.newsletter {
+    display: grid;
+    text-align: center;
+    font-size: 1.1rem;
+    grid-template-rows: 40px 1fr;  
+    margin: 50px;  
+}
+
+.newsletter h2 {
+    padding-bottom: 10px;
+}
+
+.newsletter form {
+    max-width: 850px !important;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.newsletter input {
+    width: 250px;
+    padding: 10px !important;
+    margin: 20px !important;
+    box-sizing: border-box;
+    padding-left: 20px;
+    border-color: var(--neutral-dark);
+    
+}
+
+.newsletter .input-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.newsletter button {
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-color: #fff;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+    margin: 60px 0;
+    justify-content:space-evenly;
+    text-decoration: none;
+}
+
+.info img {
+    width: 300px;
+    height: 175px;
+    margin: 10px 0;
+    border: 2px solid var(--neutral-dark)
+}
+
+.info p {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.info-type1 {
+    flex-direction: column;
+    margin: 10px;
+    max-width: 300px;
+}
+
+.info-type2 {
+    flex-direction: column;
+    margin: 10px;
+    max-width: 300px;
+    
+}
+
+a.card-link {
+    text-decoration: none; /* no underline */
+    color: inherit; 
 }
