@@ -378,7 +378,7 @@ form button {
     border-color: #fff;
 }
 
-.info {
+.info {    
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -413,6 +413,10 @@ form button {
 a.card-link {
     text-decoration: none; /* no underline */
     color: inherit; 
+}
+
+.book {
+    text-align: center;
 }
 
 .book-cta {
