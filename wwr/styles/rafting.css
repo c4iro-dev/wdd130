@@ -379,8 +379,9 @@ form button {
 }
 
 .info {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
     margin: 60px 0;
     justify-content:space-evenly;
     text-decoration: none;
@@ -399,13 +400,11 @@ form button {
 }
 
 .info-type1 {
-    flex-direction: column;
     margin: 10px;
     max-width: 300px;
 }
 
 .info-type2 {
-    flex-direction: column;
     margin: 10px;
     max-width: 300px;
     
@@ -414,4 +413,22 @@ form button {
 a.card-link {
     text-decoration: none; /* no underline */
     color: inherit; 
+}
+
+.book-cta {
+    display: block;
+    text-align: center;
+    width: 250px;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: #fff;
+    text-decoration: none;
+}
+
+.book p {
+    text-align: center;
+    white-space: pre-wrap;
 }
