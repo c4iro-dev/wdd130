@@ -30,7 +30,7 @@ header img {
     width: 100px;
     display: flex;
     align-items: center;
-    border: 2px solid var(--neutral-dark)
+    border: 1px solid var(--neutral-dark)
 }
 
 header {
@@ -383,15 +383,18 @@ form button {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     margin: 60px 0;
+    padding: 20px;
     justify-content:space-evenly;
     text-decoration: none;
+    background-color: var(--neutral-medium);
+    border: 1px solid var(--primary-color);
 }
 
 .info img {
     width: 300px;
     height: 175px;
     margin: 10px 0;
-    border: 2px solid var(--neutral-dark)
+    border: 1px solid var(--neutral-dark)
 }
 
 .info p {
